@@ -3,16 +3,17 @@
 # Feel free to rename your variables
 
 
-def title():
+def title(symbol = '='):
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
-    # Author: Copper
-    # Modified:
+    # Author: David
+    # Modified: David
     # title
-    return None
+    output = f"{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}\n{symbol} Calculator {symbol}\n{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}"
+    return output
 
-def instructions():
+#def instructions():
     # Will display instructions
     # input parameters: none needed
     # output parameters: None
@@ -28,10 +29,16 @@ def main():
     You will need to include a while loop to keep repeating the commands until
     the user chooses to exit
     """
-    title()
-    while True:
+    decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue'")
+    if decision == 'Continue' or decision == "continue":
+        title()
+        while True:
         # keep giving options to choose menu options until they choose to exit
-        pass
+            pass
+    elif decision == 'Exit' or decision == 'exit':
+        print("==============\n= Good Bye! =\n==============")
 
 if __name__ == "__main__":
-    main()
+    print(title())
+    print(main())
+
