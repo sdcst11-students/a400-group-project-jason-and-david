@@ -56,10 +56,20 @@ def main():
         quot = div_a * div_b
         print(f"The quotient of {div_a} and {div_b} is {quot}.")
     elif type_of_calc == 'Area' or type_of_calc == 'area':
-        area_a = int(input('Enter the number of the first side: '))
-        area_b = int(input('Enter the number of the second side: '))
+        area_a = int(input('Enter the value of the first side: '))
+        area_b = int(input('Enter the value of the second side: '))
         area = area_a * area_b
         print(f"The area of {area_a} and {area_b} is {area}.")
+    elif type_of_calc == 'Volume' or type_of_calc == 'volume':
+        vol_a = int(input('Enter the value of the height: '))
+        vol_b = int(input('Enter the value of the width: '))
+        vol_c = int(input('Enter the value of the length: '))
+        vol = vol_a * vol_b * vol_c
+        print(f"The volume of {vol_a}, {vol_b}, and {vol_c} is {vol}.")
+    elif type_of_calc == 'Surface Area' or type_of_calc == 'Surface area' or type_of_calc == 'surface area':
+        sa = int(input('Enter the length value of the cube: '))
+        ans = 6*(sa**2)
+        print(f"The surface area of {sa} is {ans}.")
     decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue'")
     if decision == 'Continue' or decision == "continue":
         print(title())
