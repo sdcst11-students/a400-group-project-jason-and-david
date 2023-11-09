@@ -34,12 +34,17 @@ def main():
     You will need to include a while loop to keep repeating the commands until
     the user chooses to exit
     """
-    type_of_calc = input("Choose what you want to calculate: ")
+    type_of_calc = (input("Choose what you want to calculate: "))
     if type_of_calc == 'Addition' or type_of_calc == 'addition':
-        var_a = input('Enter a number: ')
-        var_b = input('Enter anumber to add to the first number: ')
-        sum = var_a + var_b
-        print(f"The sum of {var_a} and {var_b} is {sum}")
+        add_a = int(input('Enter a number: '))
+        add_b = int(input('Enter anumber to add to the first number: '))
+        sum = add_a + add_b
+        print(f"The sum of {add_a} and {add_b} is {sum}")
+    elif type_of_calc == 'Subtraction' or type_of_calc == 'subtraction':
+        sub_a = int(input('Enter a number: '))
+        sub_b = int(input('Enter a number to subtract from the previous number: '))
+        diff = sub_a - sub_b
+        print(f"The difference of {sub_a} and {sub_b} is {diff}")
 
     decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue'")
     if decision == 'Continue' or decision == "continue":
