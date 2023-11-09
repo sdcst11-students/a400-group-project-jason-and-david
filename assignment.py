@@ -39,21 +39,27 @@ def main():
         add_a = int(input('Enter a number: '))
         add_b = int(input('Enter a number to add to the first number: '))
         sum = add_a + add_b
-        print(f"The sum of {add_a} and {add_b} is {sum}")
+        print(f"The sum of {add_a} and {add_b} is {sum}.")
     elif type_of_calc == 'Subtraction' or type_of_calc == 'subtraction':
         sub_a = int(input('Enter a number: '))
         sub_b = int(input('Enter a number to subtract from the previous number: '))
         diff = sub_a - sub_b
-        print(f"The difference of {sub_a} and {sub_b} is {diff}")
+        print(f"The difference of {sub_a} and {sub_b} is {diff}.")
     elif type_of_calc == 'Multiplication' or type_of_calc == 'multiplication':
         mult_a = int(input('Enter a number: '))
         mult_b = int(input('Enter a number to multiply the first number by: '))
         prod = mult_a * mult_b
-        print(f"The product of {mult_a} and {mult_b} is {prod}")
+        print(f"The product of {mult_a} and {mult_b} is {prod}.")
     elif type_of_calc == 'Division' or type_of_calc == 'division':
-        div_a = 
-        div_b =
-
+        div_a = int(input('Enter a number: '))
+        div_b = int(input('Enter a number to multiply the first number by: '))
+        quot = div_a * div_b
+        print(f"The quotient of {div_a} and {div_b} is {quot}.")
+    elif type_of_calc == 'Area' or type_of_calc == 'area':
+        area_a = int(input('Enter the number of the first side: '))
+        area_b = int(input('Enter the number of the second side: '))
+        area = area_a * area_b
+        print(f"The area of {area_a} and {area_b} is {area}.")
     decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue'")
     if decision == 'Continue' or decision == "continue":
         print(title())
