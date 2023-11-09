@@ -37,7 +37,7 @@ def main():
     type_of_calc = (input("Choose what you want to calculate: "))
     if type_of_calc == 'Addition' or type_of_calc == 'addition':
         add_a = int(input('Enter a number: '))
-        add_b = int(input('Enter anumber to add to the first number: '))
+        add_b = int(input('Enter a number to add to the first number: '))
         sum = add_a + add_b
         print(f"The sum of {add_a} and {add_b} is {sum}")
     elif type_of_calc == 'Subtraction' or type_of_calc == 'subtraction':
@@ -45,6 +45,11 @@ def main():
         sub_b = int(input('Enter a number to subtract from the previous number: '))
         diff = sub_a - sub_b
         print(f"The difference of {sub_a} and {sub_b} is {diff}")
+    elif type_of_calc == 'Multiplication' or type_of_calc == 'multiplication':
+        mult_a = int(input('Enter a number: '))
+        mult_b = int(input('Enter a number to multiply the first number by: '))
+        prod = mult_a * mult_b
+        print(f"The product of {mult_a} and {mult_b} is {prod}")
 
     decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue'")
     if decision == 'Continue' or decision == "continue":
