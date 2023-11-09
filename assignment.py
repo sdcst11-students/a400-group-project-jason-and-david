@@ -50,6 +50,9 @@ def main():
         mult_b = int(input('Enter a number to multiply the first number by: '))
         prod = mult_a * mult_b
         print(f"The product of {mult_a} and {mult_b} is {prod}")
+    elif type_of_calc == 'Division' or type_of_calc == 'division':
+        div_a = 
+        div_b =
 
     decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue'")
     if decision == 'Continue' or decision == "continue":
