@@ -46,8 +46,8 @@ def main():
         diff = sub_a - sub_b
         print(f"The difference of {sub_a} and {sub_b} is {diff}.")
     elif type_of_calc == 'Multiplication' or type_of_calc == 'multiplication':
-        mult_a = float(input('Enter a number: '))
-        mult_b = float(input('Enter a number to multiply the first number by: '))
+        mult_a = (input('Enter a number: '))
+        mult_b = (input('Enter a number to multiply the first number by: '))
         prod = mult_a * mult_b
         print(f"The product of {mult_a} and {mult_b} is {prod}.")
     elif type_of_calc == 'Division' or type_of_calc == 'division':
