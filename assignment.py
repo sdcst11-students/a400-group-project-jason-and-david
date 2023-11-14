@@ -74,11 +74,10 @@ def main():
 	    sqrt_num = float(input('Enter a number to square root: '))
 	    sqrt = math.sqrt(sqrt_num)
 	    print(f'The square root of {sqrt_num} is {sqrt}')
-
+    # keep giving options to choose menu options until they choose to exit
     while True:
         decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue' ")
         if decision == 'Continue' or decision == "continue":
-            # keep giving options to choose menu options until they choose to exit
                 print(title())
                 print(instructions())
                 print(main())
