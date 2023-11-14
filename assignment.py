@@ -21,11 +21,10 @@ def instructions():
     # output parameters: None
     # Author: Jason
     # Modified:
-    output = print("---------------------------------------------------------------------------------------------")
+    print("---------------------------------------------------------------------------------------------")
     print("| print out one of the calculations you choose to use =                                     |")
     print("| addition, subtraction, multiplication, division, area, volume, square root, surface area. |")
     print("---------------------------------------------------------------------------------------------")
-    return output
     
 
 def main():
