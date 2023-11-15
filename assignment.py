@@ -22,7 +22,7 @@ def instructions():
     # Author: Jason
     # Modified:
     print("---------------------------------------------------------------------------------------------")
-    print("| Choose one of the following calculations =                                                |")
+    print("| Type one of the following calculations =                                                  |")
     print("| addition, subtraction, multiplication, division, area, volume, square root, surface area. |")
     print("---------------------------------------------------------------------------------------------")
     
