@@ -77,18 +77,27 @@ def main():
         ans = round(ans,2)
         print(f"The surface area of {sa} is {ans}.")
     elif type_of_calc.lower() == 'square root':
-	    sqrt_num = float(input('Enter a number to square root: '))
-	    sqrt = math.sqrt(sqrt_num)
-        #sqrt = round(sqrt,2)
-	    print(f'The square root of {sqrt_num} is {sqrt}')
+        sqrt_num = None
+        while sqrt_num is None:
+            inp = input('Enter a number to square root: ')
+            try:
+                sqrt_num = float(inp)
+            except ValueError:
+                print('\nInvalid input\nPlease enter a number\n')
+                continue
+            if sqrt_num < 0:
+                print('\nInvalid input\nPlease enter a positive number\n')
+                sqrt_num = None
+        sqrt = math.sqrt(sqrt_num)
+        sqrt = round(sqrt, 2)
+        print(f'The square root of {sqrt_num} is {sqrt}')
     else:
         while True: 
             print('\nInvalid Input\nPlease try again\n')
             instructions()
             main()
-    # keep giving options to choose menu options until they choose to exit
     while True:
-        decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue' ")
+        decision = input("\nIf you want to exit enter 'Exit' and if you want to stay enter 'Continue' ")
         if decision.lower() == 'continue':
                 instructions()
                 main()
@@ -100,6 +109,6 @@ def main():
             
 
 if __name__ == "__main__":
-    #print(title())
-    #instructions()
+    print(title())
+    instructions()
     main()
