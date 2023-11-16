@@ -77,14 +77,12 @@ def main():
     else:
         while True: 
             print('\nInvalid Input\nPlease try again\n')
-            print(title())
             instructions()
             main()
     # keep giving options to choose menu options until they choose to exit
     while True:
         decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue' ")
         if decision.lower() == 'continue':
-                print(title())
                 instructions()
                 main()
         elif decision.lower() == 'exit':
@@ -95,6 +93,6 @@ def main():
             
 
 if __name__ == "__main__":
-    print(title())
-    instructions()
+    #print(title())
+    #instructions()
     main()
