@@ -79,8 +79,8 @@ def main():
         decision = input("If you want to exit enter 'Exit' and if you want to stay enter 'Continue' ")
         if decision == 'Continue' or decision == "continue":
                 print(title())
-                print(instructions())
-                print(main())
+                instructions()
+                main()
         elif decision == 'Exit' or decision == 'exit':
             print("==============\n= Good Bye! =\n==============")
             break
@@ -90,6 +90,5 @@ def main():
 
 if __name__ == "__main__":
     print(title())
-    print(instructions())
-    print(main())
-
+    instructions()
+    main()
