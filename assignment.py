@@ -72,7 +72,7 @@ def main():
         print(f"The surface area of {sa} is {ans}.")
     elif type_of_calc == 'Square root' or type_of_calc == 'square root':
 	    sqrt_num = float(input('Enter a number to square root: '))
-	    sqrt = math.sqrt(sqrt_num, 2)
+	    sqrt = math.sqrt(sqrt_num)
 	    print(f'The square root of {sqrt_num} is {sqrt}')
     # keep giving options to choose menu options until they choose to exit
     while True:
