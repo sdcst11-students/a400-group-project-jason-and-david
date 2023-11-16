@@ -12,7 +12,7 @@ def title(symbol = '='):
     # Author: David
     # Modified: David
     # title
-    output = f"{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}\n{symbol} Calculator {symbol}\n{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}"
+    output = f"\n{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}\n{symbol} Calculator {symbol}\n{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}{symbol}"
     return output
 
 def instructions():
@@ -21,7 +21,7 @@ def instructions():
     # output parameters: None
     # Author: Jason
     # Modified:
-    print("---------------------------------------------------------------------------------------------")
+    print("\n---------------------------------------------------------------------------------------------")
     print("| Type one of the following calculations =                                                  |")
     print("| addition, subtraction, multiplication, division, area, volume, square root, surface area. |")
     print("---------------------------------------------------------------------------------------------")
@@ -33,7 +33,7 @@ def main():
     You will need to include a while loop to keep repeating the commands until
     the user chooses to exit
     """
-    type_of_calc = (input("Choose what you want to calculate: "))
+    type_of_calc = (input("\nChoose what you want to calculate: "))
     if type_of_calc.lower() == 'addition':
         add_a = float(input('Enter a number: '))
         add_b = float(input('Enter a number to add to the first number: '))
